@@ -18,12 +18,12 @@ body {
   --color-background: var(--background-color);
   --color-primary-hover: #556b2f;
   --color-secondary-hover: #f59e0b;
-  --color-surface: #1f2937;
+  --color-surface: #27272a;
   /* --color-border:  border-color: color-mix(in oklab, var(--color-zinc-800) oklch(27.4% 0.006 286.033) = #27272a 60%, transparent); */
   --color-error: #ef4444;
   --color-success: #10b981;
   --color-warning: #fbbf24;
-  --color-card: #1f2937;
+  --color-card: #27272a;
 
   --color-text-primary: #f1f1f1;
   --color-text-secondary: #6b7280;
@@ -39,41 +39,17 @@ body {
   --color-avocado-900: oklch(0.12 0.03 118.34);
 }
 
-@keyframes cardEntrance {
-  from {
-    opacity: 0;
-    transform: translateY(12px) scale(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
 }
 
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-avocado-500);
+  border-radius: 4px;
 }
 
-@keyframes iconPop {
-  from {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes shimmer {
-  100% {
-    transform: translateX(200%);
-  }
+::-webkit-scrollbar-track {
+  background-color: var(--color-card);
 }

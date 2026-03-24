@@ -12,7 +12,7 @@ interface TotalBalanceCardProps {
 
 const TotalBalanceCard = ({ balance, change, currency = 'USD', locale = 'en-US' }: TotalBalanceCardProps) => {
     return (
-        <div className="relative overflow-hidden rounded-xl border border-avocado-600 bg-card/50 to-transparent p-6 transition-all duration-300 hover:border-avocado-500/40">
+        <div className="relative overflow-hidden rounded-xl border border-zinc-800/60 bg-card/60 p-6 transition-all duration-300 hover:border-avocado-500/40">
             <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-avocado-500/10 blur-2xl" />
             
             <div className="relative flex items-center justify-between gap-4">

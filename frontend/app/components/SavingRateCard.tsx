@@ -8,7 +8,7 @@ const SavingRateCard = ({
   percentage,
 }: SavingRateCardProps) => {
   return (
-    <div className=" overflow-hidden rounded-xl border border-zinc-800/60 bg-card/50  p-6 ">
+    <div className=" overflow-hidden rounded-xl border border-zinc-800/60 bg-card/60 p-6 ">
       <div className="flex relative flex-col gap-2">
         <h2 className="text-xs font-medium uppercase tracking-wider text-text-secondary">
           Saving Rate

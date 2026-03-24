@@ -5,6 +5,7 @@ import {
   CreditCard,
   Home,
   Landmark,
+  Weight,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,6 +15,7 @@ const navItems = [
   { name: "Transactions", icon: <ArrowLeftRight className="w-5 h-5" />, href: "/transactions" },
   { name: "Budgets", icon: <Clock className="w-5 h-5" />, href: "/budgets" },
   { name: "Accounts", icon: <CreditCard className="w-5 h-5" />, href: "/accounts" },
+  {name: "Balance", icon: <Weight className="w-5 h-5" />, href: "/balance" },
 ];
 const Sidebar = () => {
      const pathname = usePathname();
